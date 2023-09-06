@@ -1,0 +1,94 @@
+.table-row {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.table-row:hover {
+  cursor: pointer;
+  box-shadow: #ff96aa 1px 5px 15px;
+}
+
+.checkbox {
+  height: 1rem;
+  width: 1rem;
+}
+
+.table-cell {
+  font-weight: bold;
+}
+
+.spacer {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.box {
+  display: grid;
+  align-items: center;
+}
+
+.add-icon {
+  border: 1px solid #2196f3;
+  border-radius: 50%;
+  display: inline-block;
+  color: #2196f3;
+}
+
+.cohort-div {
+  margin-right: 2rem;
+}
+
+.add-course-container {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.add-icon {
+  margin-left: 10%;
+  border: 1px solid rgb(15 33 58 / 35%);
+  border-radius: 50%;
+  color: rgb(15 33 58 / 35%);
+  font-size: 2rem;
+}
+
+.send-job-btn {
+  width: 80%;
+  display: grid;
+  justify-content: end;
+  margin: 0 auto;
+}
+
+.send-job-btn button {
+  margin: 20px 0;
+  margin-top: 0;
+
+  color: rgb(255 152 171);
+  border: 1px solid rgb(255 152 171);
+}
+
+.send-job-btn button:hover {
+  background-color: rgb(255 152 171);
+  color: #0f213a;
+  border: 1px solid rgb(255 152 171);
+}
+
+.addd-edit {
+  display: grid;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.filters-detail {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cohort-div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.cohort-div div {
+  grid-template-columns: repeat(2, 1fr);
+}

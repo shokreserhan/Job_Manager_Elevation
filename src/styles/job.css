@@ -1,0 +1,116 @@
+.job {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  margin: 10px 0;
+  align-items: center;
+  background-color: #ff5777;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  border-bottom: 1px solid #ccc;
+}
+/* 
+.job:first-child {
+  margin-top: 0;
+} */
+
+.job:hover {
+  background-color: #ff7992;
+}
+
+.job-edit-btns {
+  display: grid;
+  color: #2196f3;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.interviews,
+.interviews-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.interviews-header p {
+  border-right: 1px solid black;
+}
+/* 
+.border-none {
+  border-right: 0 !important;
+} */
+
+.interviews-header p:last-of-type {
+  border-right: 0;
+}
+
+.interviews-header {
+  /* background-color: #fee3ec; */
+  font-weight: bold;
+  /* border-bottom: 1px solid black; */
+  padding: 5px;
+}
+
+.vLine {
+  border-left: 1px solid black;
+}
+
+.interviews-container {
+  display: block;
+}
+
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
+.display {
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.display {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .interviews,
+  .interviews-header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .interviews-header > p:last-child {
+    display: none;
+  }
+}

@@ -1,0 +1,114 @@
+#navbar {
+  background-color: #ff5777;
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 29;
+
+  width: 100%;
+}
+
+#navbarNav .navbar-nav a {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.my-navbar-container {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+
+#user-settings-icon {
+  position: absolute;
+  right: 0;
+}
+
+#user-settings-dropdown {
+  right: 0;
+}
+
+.navbar-brand {
+  transition: transform 0.3s;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-4px);
+}
+
+.navbar-links-content-container-black a {
+  font-weight: bold;
+}
+
+.navbar-links-content-container a {
+  color: white !important;
+}
+
+.nav-link-tabs {
+  font-weight: bold;
+}
+
+.nv-pink {
+  transition: background-color transform 1s ease-in;
+}
+
+.nv-white {
+  background-color: white !important;
+  transition: background-color transform 2s ease-out;
+}
+
+.navbar-toggler {
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navbarNav {
+    border-radius: 15px;
+  }
+
+  .navbar-toggler {
+    border: 1px solid black;
+  }
+
+  .navbar-nav {
+    direction: rtl;
+    background-color: none;
+    position: absolute;
+    right: 0;
+  }
+  .nav-link-tabs {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+  }
+
+  .navbar-links-content-container {
+    direction: rtl;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 50vw;
+    border-bottom-left-radius: 15px;
+    margin-top: 8px;
+    background-color: rgb(255, 214, 222);
+    opacity: 1;
+    z-index: 15;
+    background-color: #ff5777;
+  }
+
+  .navbar-links-content-container-black {
+    direction: rtl;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 50vw;
+    border-bottom-left-radius: 15px;
+    margin-top: 8px;
+    background-color: rgb(255, 214, 222);
+    opacity: 1;
+    z-index: 15;
+  }
+
+  .navbar-nav a {
+    padding: 20px 10px;
+    /* font-weight: bold; */
+    width: 100%;
+  }
+}
